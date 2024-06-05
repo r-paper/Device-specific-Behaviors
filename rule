@@ -1,0 +1,234 @@
+// Status Bar (Manufacturer-introduced Feature Adaptation): Set the status bar style in some customized systems.
+// Useful Project (Package Name): com.gyf.immersionbar, com.githang.statusbar
+{"status bar": "android.view.Window: void setStatusBarColor"}
+{"status bar": "status bar"}
+{"status bar": "android.view.MiuiWindowManager"}
+{"status bar": "MEIZU_FLAG_DARK_STATUS_BAR_ICON"}
+
+// Navigation Bar (Manufacturer-introduced Feature Adaptation): Get the status of the navigation bar in customized systems (adjust the interface accordingly based on the status of the status bar).
+{"navigation bar": "android.view.Window: void setNavigationBarColor"}
+{"navigation bar": "navigation bar"}
+{"navigation bar": "force_fsg_nav_bar"}
+{"navigation bar": "navigation_gesture_on"}
+{"navigation bar": "navigationbar_hide_bar_enabled"}
+
+// Push Service (Manufacturer-introduced Feature Adaptation): Use the stable push notification service provided by the device manufacturer for their customized system.
+{"push service": "NotificationCompat"}
+{"push service": "android.app.Notification"}
+{"push service": "notification"}
+{"push service": "push"}
+
+// Webview (Compatibility Issue Fix): Fix the malfunctioning WebView overview mode in Meizu systems.
+{"webview": "android.webkit.WebSettings"}
+
+// Permission Management (Manufacturer-introduced Feature Adaptation): In some customized systems, certain special permission settings are managed within customized activities. Apps need to open the corresponding activity for users to set the relevant permissions for the app.
+// Useful Project (Package Name): permissions.dispatcher.PermissionUtils, com.yhao.floatwindow, com.mylhyl.acp, com.hjq.permissions
+{"permission management": "android.permission"}
+{"permission management": "com.huawei.hsm.permission"}
+{"permission management": "com.meizu.safe.security"}
+{"permission management": "com.miui.permcenter"}
+{"permission management": "com.iqoo.secure"}
+{"permission management": "com.asus.mobilemanager"}
+{"permission management": "com.miui.securitycenter"}
+{"permission management": "com.letv.android.letvsafe"}
+{"permission management": "com.huawei.systemmanager"}
+{"permission management": "com.coloros.safecenter"}
+{"permission management": "com.oppo.safe"}
+{"permission management": "com.vivo.permissionmanager"}
+{"permission management": "com.evenwell.powersaving.g3"}
+{"permission management": "com.samsung.android.lool"}
+{"permission management": "com.oneplus.security"}
+{"permission management": "com.color.safecenter"}
+{"permission management": "com.samsung.android.sm"}
+{"permission management": "appops"}
+{"permission management": "float window"}
+{"permission management": "miui.intent.action"}
+
+// Audio (Manufacturer-introduced Feature Adaptation): Additional audio features provided in customized systems (e.g., ear return function).
+// Useful Project (Package Name): io.agora.rtc
+{"audio": "android.hardware.audio"}
+{"audio": "com.huawei.multimedia.audiokit"}
+{"audio": "com.coloros.ocs.mediaunit.MediaUnit"}
+{"audio": "android.media.AudioManager: void setStreamVolume(int,int,int)"}
+{"audio": "vivo_ktv"}
+
+// Camera (Compatibility Issue Fix): In some devices, there are APIs related to the camera that do not function properly. Special handling is required for these abnormal APIs to ensure the normal operation of the camera.
+// Useful Project (Package Name): cn.bertsir.zbar
+{"camera": "android.hardware.Camera"}
+{"camera": "android.media.CamcorderProfile"}
+{"camera": "android.media.MediaRecorder"}
+{"camera": "getSupportedFlashModes"}
+
+// Power Management (Manufacturer-introduced Feature Adaptation): In some customized systems, overly strict power management policies are set to prolong the device's battery life, leading to abnormal background operations of apps.
+{"power management": "power manager"}
+
+// Browsers (Manufacturer-introduced Feature Adaptation): Browser app provided by the customized system.
+{"browsers": "com.android.browser"}
+{"browsers": "com.huawei.browser"}
+{"browsers": "com.heytap.browser"}
+{"browsers": "com.vivo.browser"}
+
+// Html5 (Compatibility Issue Fix): In some devices, the HTML5 geolocation feature is not available.
+{"html5": "html5"}
+
+// Telephony (Compatibility Issue Fix): In some devices, telephone-related information needs to be obtained through special APIs.
+{"telephony": "content://telephony/siminfo"}
+{"telephony": "isms0"}
+
+// Display Cutouts (Manufacturer-introduced Feature Adaptation): In some customized systems, special APIs are required to obtain information related to notches in order to adjust the app interface.
+{"display cutouts": "notch"}
+{"display cutouts": "com.huawei.android.util.HwNotchSizeUtil"}
+{"display cutouts": "ro.miui.notch"}
+{"display cutouts": "com.oppo.feature.screen.heteromorphism"}
+{"display cutouts": "android.util.FtFeature"}
+{"display cutouts": "flyme.config.FlymeFeature"}
+{"display cutouts": "heteromorphism"}
+{"display cutouts": "curved display"}
+
+//OAID (Privacy-related): In regions where some Google services are unavailable, device manufacturers provide alternative advertising IDs (i.e., OAID) for user tracking.
+{"oaid": "oaid"}
+{"oaid": "com.huawei.hwid"}
+{"oaid": "com.samsung.android.deviceidservice"}
+{"oaid": "com.meizu.flyme.openid"}
+{"oaid": "com.coolpad.deviceidsupport"}
+{"oaid": "com.heytap.openid"}
+{"oaid": "com.asus.msa"}
+{"oaid": "com.zui.deviceidservice"}
+{"oaid": "com.zui.opendeviceidlibrary"}
+{"oaid": "com.meizu.flyme.openidsdk"}
+{"oaid": "com.bun.miitmdid.provider.nubia.NubiaIdentityImpl"}
+{"oaid": "com.vivo.identifier"}
+{"oaid": "com.bun.miitmdid.provider.xiaomi.IdentifierManager"}
+{"oaid": "com.vivo.vms.IdProvider"}
+{"oaid": "cn.nubia.identity"}
+
+// Device Information (Manufacturer-introduced Feature Adaptation): In some customized systems, customized system-related information needs to be obtained through custom APIs.
+{"device information": "com.huawei.system.BuildEx"}
+{"device information": "ro.meizu"}
+{"device information": "ro.vendor.meizu"}
+{"device information": "ro.iqoo"}
+{"device information": "ro.miui"}
+{"device information": "ro.build.version.emui"}
+{"device information": "ro.build.version.opporom"}
+{"device information": "ro.vivo"}
+{"device information": "ro.build.hw_emui_api_level"}
+{"device information": "ro.flyme"}
+{"device information": "miui.telephony.TelephonyManager"}
+{"device information": "ro.lenovo"}
+{"device information": "ro.build.flyme"}
+{"device information": "ro.sony"}
+{"device information": "com.hihonor.android.os.Build"}
+{"device information": "com.huawei.android.telephony"}
+{"device information": "com.huawei.android.os.BuildEx"}
+
+//Video Players (Manufacturer-introduced Feature Adaptation): Video player app provided by the customized system.
+{"video players": "com.samsung.android.video"}
+{"video players": "com.huawei.himovie"}
+{"video players": "com.miui.video"}
+{"video players": "com.coloros.video"}
+{"video players": "com.meizu.media.video"}
+{"video players": "com.sony.dtv.hardware.panel.qfhd"}
+
+// Launchers (Manufacturer-introduced Feature Adaptation): Some customized systems offer additional badge functionality to display the number of unread messages on the home screen. Additionally, some customized systems require setting shortcuts through special APIs.
+// Useful Project (Package Name): me.leolin.shortcutbadger, com.onesignal.shortcutbadger
+{"launchers": "com.huawei.android.launcher"}
+{"launchers": "com.miui.home"}
+{"launchers": "com.oppo.launcher"}
+{"launchers": "com.htc.launcher"}
+{"launchers": "com.sonyericsson.home"}
+{"launchers": "com.miui.mihome2"}
+{"launchers": "com.huawei.launcher2"}
+{"launchers": "com.oneplus.hydrogen.launcher"}
+{"launchers": "com.sec.android.app.launcher"}
+{"launchers": "com.sec.android.app.twlauncher"}
+{"launchers": "com.cyanogenmod.trebuchet"}
+{"launchers": "com.lenovo.launcher"}
+{"launchers": "com.zte.mifavor.launcher"}
+{"launchers": "com.android.launcher"}
+{"launchers": "com.smartisanos.launcher"}
+{"launchers": "com.meizu.flyme.launcher"}
+{"launchers": "cn.nubia.launcher"}
+{"launchers": "com.bbk.launcher"}
+{"launchers": "com.sonyericsson.setupwizard"}
+{"launchers": "com.meizu.flyme.easylauncher"}
+{"launchers": "com.gionee.navil"}
+{"launchers": "badge"}
+{"launchers": "content://com.android.badge/badge"}
+{"launchers": "launcher.action.CHANGE_APPLICATION_NOTIFICATION_NUM"}
+{"launchers": "content://com.android.launcher3.cornermark.unreadbadge"}
+{"launchers": "content://com.huawei.android.launcher.settings/badge/"}
+{"launchers": "com.sonyericsson.home.action.UPDATE_BADGE"}
+{"launchers": "com.sonyericsson.home.intent.extra.badge"}
+{"launchers": "content://com.hihonor.android.launcher.settings/badge/"}
+{"launchers": "short cut"}
+
+// App Markets (Manufacturer-introduced Feature Adaptation): App market app provided by the customized system.
+{"app markets": "samsungapps"}
+{"app markets": "com.xiaomi.market"}
+{"app markets": "com.gionee.aora.market"}
+{"app markets": "com.huawei.appmarket"}
+{"app markets": "com.oppo.market"}
+{"app markets": "com.bbk.appstore"}
+{"app markets": "com.meizu.mstore"}
+{"app markets": "com.heytap.market"}
+{"app markets": "com.lenovo.leos.appstore"}
+{"app markets": "com.smartisanos.appstore"}
+{"app markets": "zte.com.market"}
+{"app markets": "cn.nubia.neostore"}
+{"app markets": "com.huawei.appgallery"}
+{"app markets": "com.sec.android.app.samsungapps.referrer"}
+{"app markets": "com.miui.referrer"}
+{"app markets": "com.sec.android.app.samsungapps.installreferrer"}
+
+// UI Feature (Manufacturer-introduced Feature Adaptation): In some customized systems, there are additional UI features, such as the SmartBar in the Meizu system.
+{"ui feature": "com.huawei.android.view"}
+{"ui feature": "hasSmartBar"}
+
+// Photo Storage (Compatibility Issue Fix): In Xiaomi's customized system, the location where photos are stored is different from other systems.
+// Useful Project (Package Name): com.luck.picture, com.yalantis.ucrop, com.huantansheng.easyphotos, com.ypx.imagepicker, com.wildma.pictureselector
+{"photo storage": "android.provider.MediaStore"}
+{"photo storage": "/DCIM/Camera/"}
+{"photo storage": "com.android.camera.action"}
+
+// Memory Leak (Compatibility Issue Fix): In some customized systems, certain system components have memory leak issues, requiring additional handling to prevent memory leaks.
+{"memory leak": "android.gestureboost.GestureBoostManager"}
+{"memory leak": "com.samsung.android.content.clipboard.SemClipboardManager"}
+{"memory leak": "com.samsung.android.emergencymode.SemEmergencyManager"}
+{"memory leak": "android.view.inputmethod.InputMethodManager"}
+
+// Encode (Compatibility Issue Fix): In some devices, certain encodings do not function properly.
+// Useful Project (Package Name): com.bumptech.glide, com.vincent.videocompressor, com.mabeijianxi.smallvideorecord2
+{"encode": "android.media.MediaCodec"}
+
+// Tablet and PC Mode (Manufacturer-introduced Feature Adaptation): In some devices, an additional tablet or PC mode is provided to facilitate office work for users.
+{"tablet and pc mode": "ro.build.characteristics"}
+{"tablet and pc mode": "hw.productive.mode.pc"}
+
+// foldables (Manufacturer-introduced Feature Adaptation): In some customized systems, special APIs are required to obtain information related to foldable in order to adjust the app interface.
+{"foldables": "foldable"}
+{"foldables": "fold device"}
+{"foldables": "fold screen"}
+{"foldables": "oplus.hardware.type.fold"}
+{"foldables": "hardware.sensor.posture"}
+
+// Display Information (Compatibility Issue Fix): In some Samsung devices, certain APIs for retrieving display information do not work properly, and specific APIs need to be used to obtain the correct display information.
+{"display information": "samsung, android.view.Display: void getRealMetrics"}
+
+// Bluetooth (Compatibility Issue Fix): In some devices, specific parameters are required to enable Bluetooth scanning, and certain Bluetooth features (e.g., offloaded scan batching and offloaded filter functionality) do not work properly.
+{"bluetooth": "android.bluetooth.BluetoothAdapter"}
+{"bluetooth": "android.bluetooth.BluetoothDevice"}
+
+// VPN (Compatibility Issue Fix): In some Samsung devices, when the VPN feature malfunctions, DNS routing needs to be manually added.
+{"vpn": "samsung, openvpn"}
+
+// Pen (Manufacturer-introduced Feature Adaptation): In some Huawei devices equipped with a stylus, special APIs are required to access stylus-related features.
+{"pen": "com.huawei.stylus.penengine.HwPenEngineManager: boolean isSupportEink"}
+
+// Enterprise (Manufacturer-introduced Feature Adaptation): In some devices with enterprise features, special APIs are required to obtain the status of these enterprise-related features.
+{"enterprise": "isManagedProfile"}
+
+// System Properties Containing Hardware Identifiers (Privacy-related): In some customized systems, there are additional non-resettable device identifiers stored in the system properties.
+{"system properties containing hardware identifiers": "ro.ril.miui.imei"}
+{"system properties containing hardware identifiers": "ro.ril.miui.meid"}
+{"system properties containing hardware identifiers": "ro.vendor.vivo.serialno"}
+{"system properties containing hardware identifiers": "ro.meizu.hardware.imei"}
